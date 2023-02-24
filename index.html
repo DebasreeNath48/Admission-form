@@ -1,0 +1,175 @@
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body
+{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: red;  
+}  
+.container
+{  
+    padding: 50px;  
+  background-color: lightgreen;  
+}  
+  
+input[type=text], input[type=password], textarea 
+{  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus
+ {  
+  background-color: pink;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+</style>  
+</head>  
+<body>  
+<form>  
+  <div class="container">  
+<marquee direction=right ><h1>ADMISSION OF COVID-19 PATIENTS</h1></marquee>
+<center><h2 style="color:darkblue;"><u>AK HOSPITAL AND MANAGEMENT</u></h2></center> 
+ <center>  <h3><u>PATIENT'S REGISTRATION FORM</u></h3> </center> 
+  <hr>  
+  <label> <b>Firstname:</b> </label>   
+<input type="text" name="firstname" placeholder= "Firstname" size="15" required />   
+<label><b> Middlename:</b> </label>   
+<input type="text" name="middlename" placeholder="Middlename" size="15" required />   
+<label><b> Lastname:</b> </label>    
+<input type="text" name="lastname" placeholder="Lastname" size="15"required />  
+<label> <b>Enter patient's weight:</b> </label>
+<input type="text" weight="Enter patient's weight" placeholder="patient's weight" size="10"/> 
+<hr>
+<label for="birthday"><b>Date of Birth:</b></label>
+<input type="date" id="birthday"name="DOB">
+<div>  
+<label>   
+<b>Symptoms :</b>  
+</label>   
+<select>  
+<option value="select">select</option>  
+<option value="FEVER">FEVER</option>  
+<option value="NAUSEA">NAUSEA</option>  
+<option value="NO SMELL">NO SMELL</option>  
+<option value="SEVERE HEADACHE">SEVERE HEADACHE</option>  
+<option value="THROAT PAIN">THROAT PAIN</option>  
+<option value="NO TASTE">NO TASTE</option>  
+<option value="OTHERS">OTHERS</option>  
+</select>
+<br>
+<label><b>City:</b></label>
+<select>
+<option value="select">select</option>  
+<option value="kolkata">kolkata</option>  
+<option value="mumbai">mumbai</option>  
+<option value="pune">pune</option>  
+<option value="delhi">delhi</option> 
+</select> 
+</div>  
+<div>  
+<label>   
+<b>Gender</b> :  
+</label><br>  
+<input type="radio" value="Male" name="gender" > Male   
+<input type="radio" value="Female" name="gender"> Female   
+<input type="radio" value="Other" name="gender"> Other  
+  
+</div>  
+<label>   
+<b>Enter Country Code :</b>  
+</label>  
+<input type="text" name="country code" placeholder="Country Code"  size="2"/> 
+<label>
+<b>Phone Number:</b>
+</label>  
+<input type="text" name="phone" placeholder="phone no." size="10"/ required>   
+<b>Current Address :</b>  
+<textarea cols="80" rows="5" placeholder="Current Address" value="address" required>  
+</textarea>
+<label for="pin code"><b>Pin Code:</b></label>
+<input type="text" code="Enter Pin Code" placeholder="Pin Code" size="10"/>
+
+<label><b>Swastha Sathi Card(availability):</b>  
+</label><br>
+<input type="radio" value="Yes" name="swastha" > Yes   
+<input type="radio" value="No" name="swastha"> No
+<input type="radio" value="Temporarily not available" name="swastha"> Temporarily not available
+<br> 
+<br> 
+
+<label><b>Donate Plasma after recovery?:</b>  
+</label><br>
+<input type="radio" value="Yes" name="plasma" > Yes   
+<input type="radio" value="No" name="plasma"> No
+<input type="radio" value="May Be" name="plasma">May Be
+<br> 
+<br> 
+ <label for="email"><b>Email(if any)</b></label>  
+ <input type="text" placeholder="Enter Email" name="email" required>  
+  
+    <label for="psw"><b>Password</b></label>  
+    <input type="password" placeholder="Enter Password" name="psw" required>  
+  
+    <label for="psw-repeat"><b>Re-type Password</b></label>  
+    <input type="password" placeholder="Retype Password" name="psw-repeat" required>
+<BR>
+<label>   
+<b>How do you came to know about our hospital? :</b>  
+</label>   
+<select>  
+<option value="select">select</option>  
+<option value="INTERNET">INTERNET</option>  
+<option value="DOCTOR'S CONSULTANCY">DOCTOR'S CONSULTANCY</option>  
+<option value="FRIEND">FRIEND</option>  
+<option value="NEWSPAPER">NEWSPAPER</option>  
+<option value="SOCIAL MEDIA">SOCIAL MEDIA</option>  
+<option value="RECOMMENDATION FROM ANOTHER HOSPITAL">RECOMMENDATION FROM ANOTHER HOSPITAL</option>  
+<option value="OTHERS">OTHERS</option>  
+</select>
+<br> 
+<hr> 
+<center><h4><u>DOCUMENTS TO BE UPLOADED</u></h4></center>
+<form action="upload.php"method="post"enctype="multipart/form-data">
+<b>Upload Photo ID</b>
+<input type="file"name="filetoupload"id="filetoupload"><br>
+<input type="submit" value="upload Photo ID" name="submit">
+</form>
+<br>
+<br>
+<br>
+<form action="upload.php"method="post"enctype="multipart/form-data">
+<b>Upload RTPCR test report</b>
+<input type="file"name="filetoupload"id="filetoupload"><br>
+<input type="submit" value="upload report" name="submit">
+</form>
+<hr>
+<h2 style="color:darkblue;">**PLEASE CHECK ALL THE DETAILS BEFORE SUBMITTING</h2>   
+<button type="submit" class="registerbtn"><b>SUBMIT</b></button>
+</form>  
+</body>  
+</html>
